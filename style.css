@@ -1,0 +1,626 @@
+/***Diseño en general***/
+body{
+    background-color: rgb(238, 238, 238);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#index-main{
+    width: 100%;
+    height: 100px;
+}
+footer,
+nav {
+    background-color:rgb(253, 97, 26);
+}
+
+nav ul li {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+    font-size:24px ;
+    text-transform:uppercase ;
+}
+a,
+button,input {
+    text-decoration: none;
+    color: #000000;
+}
+button {
+    border-radius: 5px;
+    background-color: rgb(253, 97, 26);
+    padding: 3px;
+}
+nav {
+    font-size: large;
+    font-weight: 500;
+}
+.img1 {
+    width: 100%;
+    height: 100%;
+}
+.img3 {
+    width:  100%;
+}
+.img4 {
+    text-align: right;
+    padding: 10px;
+    border: none;
+}
+.imgar{
+    width: 100px;
+    height: 100px;
+}
+header{
+    padding: 5px;
+    margin: 0px
+}
+nav ul a {
+    padding: 30px;
+}
+
+/***Productos***/
+.menulateral{
+    font-size: 16px;
+    background-color:rgb(253, 97, 26);
+    text-transform: none;
+}
+aside {
+    padding: 20px;
+}
+aside ul li {
+    padding: 10px;
+    margin-left: -40px;
+}
+.producto-article {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+}
+.producto-section{
+    padding: 20px;
+    margin: 10px;
+}
+
+/***ayuda celdas***/
+.ayuda-article {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+}
+.PREGUNTAS{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/***formulario***/
+.postularme{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.postularmemas{
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+/***sesion***/
+.sesion{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/***box footer en general grid area***/
+.box1{
+    grid-area: box1;
+}
+.box2{
+    grid-area: box2;
+}
+.box2{
+    grid-area: box2;
+}
+
+/***index diseño***/
+.index-header {
+    grid-area: index-header;
+    justify-content: space-between;
+}
+.index-footer {
+    grid-area: index-footer;
+    justify-content: center;
+}
+.index-nav {
+    grid-area: index-nav;
+}
+.index-section{
+    grid-area: index-section;
+}
+.index-header,
+.index-footer,
+.index-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.index-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#index-main,
+.index-footer
+{
+    display: grid;
+}
+
+/***Producto diseño grid***/
+.producto-header{
+    grid-area: producto-header;
+    justify-content: space-between;
+}
+.producto-footer {
+    grid-area: producto-footer;
+    justify-content: center;
+}
+.producto-nav{
+    grid-area: producto-nav;
+}
+.producto-aside{
+    grid-area: producto-aside;
+}
+.producto-section{
+    grid-area:producto-section;
+}
+.producto-header,
+.producto-footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.producto-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.producto-main,.producto-section,.producto-footer{
+    display: grid;
+}
+
+/***Ayuda diseño***/
+.ayuda-header,.ayuda-footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.ayuda-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.ayuda-footer{
+    display: grid;
+}
+
+/***Marca diseño grid***/
+.marca-header {
+    grid-area: marca-header;
+    justify-content: space-between;
+}
+.marca-footer {
+    grid-area: marca-footer;
+    justify-content: center;
+}
+.marca-nav {
+    grid-area: marca-nav;
+}
+.marca-section{
+    grid-area: marca-section;
+}
+.marca-header,
+.marca-footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.marca-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.marca-main,.marca-section,.marca-footer{
+    display: grid;
+}
+
+/***Sesion area***/
+.sesion-header,
+.sesion-footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.sesion-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.sesion-footer{
+    display: grid;
+}
+/***Formulario area***/
+.formu-header,.formu-footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.formu-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.formu-footer{
+    display: grid;
+}
+@media screen and (min-width: 320px) {
+
+    /***Media Index***/
+    #index-main{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        column-gap: 15px;
+        row-gap: 0px;
+        grid-template-areas: "index-header" "index-nav" "index-section" "index-footer";
+    }
+    .index-footer{
+        grid-template-columns: 1fr 2fr ;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px;
+        grid-template-areas: "box1 box2" "box1 box3"
+    }
+    h2,a{
+        font-size: 16px;
+    }
+    #menuBurger{
+        margin-left: 10px;
+    }
+    #ulNav{
+        display: none;
+    }
+    .index-nav{
+        display: flex;
+        justify-content: space-between;
+        height: 56px;
+    }
+    
+    /***Media Producto***/
+    .producto-main{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        column-gap: 15px;
+        row-gap: 15px;
+        grid-template-areas: "producto-header" "producto-nav" "producto-section" "producto-footer";
+    }
+    .producto-footer{
+        grid-template-columns: 1fr 2fr ;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px;
+        grid-template-areas: "box1 box2" "box1 box3"
+    }
+    h2,a{
+        font-size: 16px;
+    }
+    .producto-section {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 15px;
+        row-gap: 15px;
+        justify-items: stretch;
+        align-items: stretch;
+        text-align: center;
+    }         
+    .producto-nav{
+        display: flex;
+        justify-content: space-between;
+        height: 56px; 
+    }
+    #menuBurgerproduc{
+        margin-left: 10px;
+    }
+    .producto-aside,.fondo-verde{
+        display: none;
+    }
+
+    /***Media ayuda***/
+    .ayuda-nav{
+        display: flex;
+        justify-content: space-between;
+        height: 56px;
+    }
+    .ayuda-footer{
+        grid-template-columns: 1fr 2fr ;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px;
+        grid-template-areas: "box1 box2" "box1 box3" 
+    }
+    h2,a{
+        font-size: 16px;
+    }
+    .menu-ayuda{
+        display: none;
+    }
+    #menuBurgerayuda{
+        margin-left: 10px;
+    }
+    .ayuda-article{
+        padding: 15px;
+        margin: 0px;
+    }
+
+    /***Media formulario***/
+    .formu-nav{
+        display: flex;
+        justify-content: space-between;
+        height: 56px; 
+    }
+    .formu-footer{
+        grid-template-columns: 1fr 2fr ;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px;
+        grid-template-areas: "box1 box2" "box1 box3" 
+    }
+    h2,a{
+        font-size: 16px;
+    }
+    .menu-formu{
+        display: none;
+    }
+    #menuBurgerformu{
+        margin-left: 10px;
+    }
+    .postularme{
+        padding: 15px;
+        margin: 0px;
+    }
+
+    /***Media Marca ***/
+    .marca-main{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        column-gap: 15px;
+        row-gap: 15px;
+        grid-template-areas: "marca-header" "marca-nav" "marca-section" "marca-footer";
+    }
+    .marca-section {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 15px;
+        row-gap: 15px;
+        justify-items: stretch;
+        align-items: stretch;
+        text-align: center;
+    }
+    .marca-footer{
+        grid-template-columns: 1fr 2fr ;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px;
+        grid-template-areas: "box1 box2" "box1 box3"   
+    }
+    h2,a{
+        font-size: 16px;
+    }
+    .marca-nav{
+        display: flex;
+        justify-content: space-between;
+        height: 56px; 
+    }
+    #menuBurgermarca{
+        margin-left: 10px;
+    }
+    .menu-marca{
+        display: none;
+    }
+
+    /***Media sesion***/
+    .menu-sesion{
+        display: none;
+    }
+    .sesion-nav{
+        display: flex;
+        justify-content: space-between;
+        height: 56px; 
+    }
+    .sesion-footer{
+        grid-template-columns: 1fr 2fr ;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px;
+        grid-template-areas: "box1 box2" "box1 box3"    
+    }
+    h2,a{
+        font-size: 16px;
+    }
+    #menuBurgersesion{
+        margin-left: 10px;
+    }
+    .sesion{
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+    }
+
+}
+@media screen and (min-width: 480px) {}
+
+@media screen and (min-width: 600px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1200px) {
+
+    /***Media Index***/
+    #index-main{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        column-gap: 0px;
+        row-gap: 0px;
+        grid-template-areas: "index-header index-header" "index-nav index-nav" "index-section index-section" "index-footer index-footer";
+    }
+    .index-footer{
+        display: flex;
+    }
+    h2,a{
+        font-size: 24px;
+    }
+    #menuBurger {
+        display: none; 
+    }
+    #ulNav{
+        display: block;
+        margin-left: 300px;
+    }
+
+    /***Media producto***/
+    .producto-main{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        column-gap: 10px;
+        row-gap: 20px;
+        grid-template-areas: "producto-header producto-header" "producto-nav producto-nav" "producto-aside producto-section" "producto-footer producto-footer";
+    }
+    .producto-section {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 15px;
+        row-gap: 15px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+    .producto-footer{
+        display: flex;
+    }
+    h2,a{
+        font-size: 24px;
+    }
+    #menuBurgerproduc{
+        display: none;
+    }
+    .fondo-verde{
+        display: block;
+        margin-left: 300px;
+    }
+    .producto-aside{
+        display: block;
+    }
+
+    /***Media ayuda***/
+    #menuBurgerayuda{
+        display: none;
+    }
+    .menu-ayuda{
+        display: block;
+        margin-left: 300px;
+    }
+    .ayuda-footer{
+        display: flex;
+    }
+    h2,a{
+        font-size: 24px;
+    }
+    .ayuda-article{
+        padding: 30px;
+        margin: 20px;
+    }
+
+    /***Media formulario***/
+    .menu-formu{
+        display: block;
+        margin-left: 300px;
+    }
+    .formu-footer{
+        display: flex;
+    }
+    h2,a{
+        font-size: 24px;
+    }
+    #menuBurgerformu{
+        display: none;
+    }
+    .postularme{
+        padding: 30px;
+        margin: 20px;
+    }
+    
+    /***Media MARCA***/
+    .marca-main{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        column-gap: 10px;
+        row-gap: 20px;
+        grid-template-areas: "marca-header marca-header" "marca-nav marca-nav" "marca-section marca-section" "marca-footer marca-footer";
+    }
+    .marca-section {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        column-gap: 15px;
+        row-gap: 15px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+    .marca-footer{
+        display: flex;
+    }
+    h2,a{
+        font-size: 24px;
+    }
+    #menuBurgermarca{
+        display: none;
+    }
+    .menu-marca{
+        display: block;
+        margin-left: 300px;
+    }
+
+    /***Media sesion***/
+    .menu-sesion{
+        display: block;
+        margin-left: 300px;
+    }
+    .sesion-footer{
+        display: flex;
+    }
+    h2,a{
+        font-size: 24px;
+    }
+    #menuBurgersesion{
+        display: none;
+    }
+    .sesion{
+        padding: 30px;
+        margin: 20px;
+        text-align: center;
+    }
+}
+
+
